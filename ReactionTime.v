@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ReactionTime();
+module ReactionTime(input clk, reset, start, measure, output LED output [7:0] seg, an);
 	wire [3:0] Q2, Q1, Q0;
 	wire reset2 = reset | start;
 		DelayGen m1(clk, reset, start, LED);
